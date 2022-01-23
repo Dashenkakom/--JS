@@ -2,12 +2,17 @@
 //console.dir(document.querySelector('.header-menu__logo'))
 //const link = document.querySelector('.header-menu__item a')
 const links = document.querySelectorAll('.header-menu__item a')
+const linkCharacteristics = document.querySelector('.card-details__link-characteristics')
+console.log(linkCharacteristics)
+
+const newArray = [...links, linkCharacteristics]
+console.log(newArray)
 //console.log(links);
 //const array = [1, 2, 3, 4, 5]
 seamless.polyfill();
 //console.log(link);
 //console.log(links);
-links.forEach((element) => {
+newArray.forEach((element) => {
     //document.style.border = '1px solid green';
     //console.dir(element)
     //element.onclick = () => {
